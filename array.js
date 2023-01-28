@@ -47,7 +47,23 @@
     const genap = numbers.filter(value => value % 2 === 0);
     const ganjil = numbers.filter(value => value % 2 === 1);
 
-    console.info(numbers);
-    console.info(genap);
-    console.info(ganjil);
+    // console.info(numbers);
+    // console.info(genap);
+    // console.info(ganjil);
+}
+{
+    // array transform
+    const names = ["Rama", "Fajar", "Fadhillah"];
+    const namesUpper = names.map(value => value.toUpperCase());
+    console.info(namesUpper);
+
+    const nameReduce = names.reduce((before, value) => before + " " + value);
+    console.info(nameReduce);
+
+    const nameReduceRight = names.reduceRight((before, value) => before + " " + value);
+    console.info(nameReduceRight);
+
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const total = numbers.reduce((before, value) => before + value);
+    console.info(total);
 }
